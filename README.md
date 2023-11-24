@@ -26,7 +26,11 @@ _default via XX.XX.XX.XX dev eth0 onlink_
 
 **eth0** <-- mūsų tinklo plokštė per kurią ir eina visas srautas.
 
-Toliau
+Toliau konfiguruojam FireWall'ą
+
+     sudo ufw disable
+     sudo ufw enable
+     sudo ufw status
      
 ### Pagrindinės komandos konfiguruojant Wireguard serverį:
 
