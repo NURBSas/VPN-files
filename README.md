@@ -13,11 +13,21 @@ Konfiguruojam serverį:
      sudo nano /etc/sysctl.conf
 
 Atidarius failą patikrinam ar atidaryta eilutė:
+(Ši komanda atsakynga už adresų peradresavimą)
 
-     net.ipv4.ip_forward=1
+     net.ipv4.ip_forward=1 
      net.ipv6.conf.all.forwarding=1 # (Jai norime naudoti IPv6 standartą)
+
+Toliau patikrinam tinklo interfeiso pavadinimą:
+
+     ip route list default
+
+     [ default via XX.XX.XX.XX dev eth0 onlink]
+     eth0 <-- mūsų tinklo plokštė per kurią ir eina visas srautas.
+
+Toliau
      
-Pagrindinės komandos konfiguruojant Wireguard serverį:
+### Pagrindinės komandos konfiguruojant Wireguard serverį:
 
 Komanda generuojanti WG privatų raktą:
 
