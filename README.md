@@ -27,13 +27,28 @@ Failo viduje turėtu būti tokia konfiguracija:
 
      Address = 16.0.0.1/24                                                                                                                        
      SaveConfig = true                                                                                                                            
-     ListenPort = 51280 (Priklausomai koks atviras portas yra pas jus tokį ir įrašykite)                                                                                                                           
-     PrivateKey = xxxxxxxxxxxxxxx
+     ListenPort = 51266 #(Priklausomai koks atviras portas yra pas jus tokį ir įrašykite)                                                                                                                           
+     PrivateKey = xxxxxxxxxxxxxxx #(privatus serverio raktas)
      PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o ens3 -j MASQUERADE
      PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o ens3 -j MASQUERADE
 
      [Peer]
-     PublicKey = xxxxxxxx
-     PresharedKey = xxxxxxxxxx
+     PublicKey = xxxxxxxx #(kliento viešas raktas)
+     PresharedKey = xxxxxxxxxx #(bendras patikimumo raktas)
      AllowedIPs = 16.0.0.2/24
+
+Kliento pusėje turėtų būti.
+
+     [Interface]
+     PrivateKey = MK8WzzosyUVFX01B89bMjGLiP9zjXKE/gjzse7oG2GI=
+     Address = 16.0.0.2/32
+     DNS = 8.8.8.8
+
+     [Peer]
+     PublicKey = xxxxxxxxx #(serverio viešas raktas)
+     AllowedIPs = 0.0.0.0/0
+     Endpoint = XX.XX.XX.XX:51266 #(Jūsų išorinis IP adresas)
+     PersistentKeepalive = 20
+
+Testuojam:
 
