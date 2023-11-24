@@ -126,5 +126,20 @@ Tesiame galimai iškilsiančių problemų sprendimus.
 Windows klientas kuris neturi admin teisių gali susidurti su instaliacijos ir paleidimo problemomis.
 Sprandžiasi jos taip. Vartotojo aplinkoje atidarome **CMD** administratoriaus vardu:
 
+Registrai kuriuos reikia sukurti:
 
+     reg add HKLM\Software\WireGuard /v LimitedOperatorUI /t REG_DWORD /d 1 /f
+
+     reg add HKLM\Software\WireGuard /v DangerousScriptExecution /t REG_DWORD /d 1 /f
+
+Norint užsinstaliuoti wireguard klientą.
+Reikia vartotoja pridėti prie _Administrators_ grupės:
+
+     net localgroup administrators AzureAD\_vardaspavarde_ /add
+
+užinstaliuojam wireguard'ą ir tada
+
+     net localgroup administrators AzureAD\_vardaspavarde_ /delete
+
+net localgroup "Network Configuration Operators" /add "AzureAD\vardaspavarde@zki.lt"
 
