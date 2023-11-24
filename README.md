@@ -43,7 +43,9 @@ Toliau paleidžiam patį WG servisą:
      sudo systemctl enable wg-quick@wg0.service
      sudo systemctl start wg-quick@wg0.service
 
-Jai norime tik perkrauti tai _sudo systemctl restart wg-quick@wg0.service_
+Jai norime tik perkrauti tai:
+
+     sudo systemctl restart wg-quick@wg0.service
 
 Žiūrime į WG serviso būseną:
 
