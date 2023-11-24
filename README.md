@@ -11,9 +11,11 @@ Pradžioje užsiinstaliuojam ubuntu server:
 Pagrindinės komandos konfiguruojant Wireguard serverį:
 
 Komanda generuojanti WG privatų raktą:
+
      wg genkey
 
 Komanda generuojanti viešajį raktą:
+
      echo XXprivatus-raktasXX | wg pubkey 
 
 
