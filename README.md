@@ -91,9 +91,27 @@ Kliento pusėje turėtų būti.
 
 ### Papildomai dar galima sukonfiguruoti NGINX serverį:
 
-Atnaujinam ubuntu ir instaliuojame **Nginx** serverį
+Atnaujinam ubuntu ir instaliuojame **Nginx** serverį ir jį paleidžiame:
 
      sudo apt update -y && sudo apt install -y nginx
+
+     sudo systemctl start nginx
+
+Toliau tikrinam konfiguracinį failą ir jį pakoreguojam:
+Susirandam vietą su  _stream{_ ir įrašom sekančias eilutes:
+
+     server {
+     listen 80 udp;
+     proxy_pass 127.0.0.1:51866;
+     }
+
+Tuomet paleidžiame komandą kuri paleidžia atgalinį proxy per 80 portą:
      
+     sudo nginx -t
+     
+Tesiame galimai iškilsiančių problemų sprendimus.
+Windows klientas kuris neturi admin teisių gali susidurti su instaliacijos ir paleidimo problemomis.
+Sprandžiasi jos taip. Vartotojo aplinkoje atidarome **CMD** administratoriaus vardu:
+
 
 
