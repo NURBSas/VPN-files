@@ -3,10 +3,15 @@ Viskas apie VPN servisą
 
 ## Wireguard instaliacija (ubuntu server ir windows client)
 
-sudo apt update
-sudo apt install wireguard -y
+Pradžioje užsiinstaliuojam ubuntu server:
 
-wg genkey <-- komanda generuojanti WG privatų raktą
-echo XXprivatus-raktasXX | wg pubkey <-- komanda generuojanti viešajį raktą
+     sudo apt update
+     sudo apt install wireguard -y
+
+Pagrindinės komandos konfiguruojant Wireguard serverį:
+
+     wg genkey <-- komanda generuojanti WG privatų raktą
+     
+     echo XXprivatus-raktasXX | wg pubkey <-- komanda generuojanti viešajį raktą
 
 
