@@ -89,6 +89,17 @@ Kliento pusėje turėtų būti.
      Endpoint = XX.XX.XX.XX:51266 #(Jūsų išorinis IP adresas)
      PersistentKeepalive = 20
 
+Norint pridėti ar pakeisti kažką **wg0.conf** faile ir kad tai suveiktu reikia perkrauti patį servisą
+Serviso sustabdymo komanda:
+
+     wg-quick down wg0
+
+Pakoregavus **wg0.conf** failą reikia vėl paleisti servisą komanda:
+
+     wg-quick up wg0
+
+Po perkrovimo esamas **wg0.conf** pasikeičia tai yra perrašomas.
+
 ### Papildomai dar galima sukonfiguruoti NGINX serverį:
 
 Atnaujinam ubuntu ir instaliuojame **Nginx** serverį ir jį paleidžiame:
