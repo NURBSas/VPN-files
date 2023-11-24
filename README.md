@@ -130,8 +130,7 @@ Tam yra komanda
 
      wg
 
-     _arba_ wg show
-
+arba _wg show_
 
 Tesiame galimai iškilsiančių problemų sprendimus.
 Windows klientas kuris neturi admin teisių gali susidurti su instaliacijos ir paleidimo problemomis.
