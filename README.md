@@ -22,8 +22,8 @@ Toliau patikrinam tinklo interfeiso pavadinimą:
 
      ip route list default
 
-     (default via XX.XX.XX.XX dev eth0 onlink)
-     **eth0** <-- mūsų tinklo plokštė per kurią ir eina visas srautas.
+(_default via XX.XX.XX.XX dev eth0 onlink_)
+**eth0** <-- mūsų tinklo plokštė per kurią ir eina visas srautas.
 
 Toliau
      
