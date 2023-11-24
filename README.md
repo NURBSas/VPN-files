@@ -26,11 +26,17 @@ _default via XX.XX.XX.XX dev eth0 onlink_
 
 **eth0** <-- mūsų tinklo plokštė per kurią ir eina visas srautas.
 
-Toliau konfiguruojam FireWall'ą
+Toliau tikrinam FireWall'ą
 
      sudo ufw disable
      sudo ufw enable
      sudo ufw status
+
+ Turim gauti atsakymą:
+
+_51866/udp ALLOW Anywhere_
+_OpenSSH ALLOW Anywhere_
+
      
 ### Pagrindinės komandos konfiguruojant Wireguard serverį:
 
