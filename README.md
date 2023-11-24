@@ -140,7 +140,7 @@ Reikia vartotoja pridėti prie _Administrators_ grupės:
 
      net localgroup administrators AzureAD\vardaspavarde /add
      
-     net localgroup "Network Configuration Operators" /add "AzureAD\vardaspavarde@zki.lt"
+     net localgroup "Network Configuration Operators" /add "AzureAD\vardaspavarde@contoso.lt"
 
 užinstaliuojam wireguard'ą ir tada
 
