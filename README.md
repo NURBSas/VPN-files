@@ -135,11 +135,12 @@ Registrai kuriuos reikia sukurti:
 Norint užsinstaliuoti wireguard klientą.
 Reikia vartotoja pridėti prie _Administrators_ grupės:
 
-     net localgroup administrators AzureAD\_vardaspavarde_ /add
+     net localgroup administrators AzureAD\vardaspavarde /add
+     
+     net localgroup "Network Configuration Operators" /add "AzureAD\vardaspavarde@zki.lt"
 
 užinstaliuojam wireguard'ą ir tada
 
-     net localgroup administrators AzureAD\_vardaspavarde_ /delete
+     net localgroup administrators AzureAD\vardaspavarde /delete
 
-net localgroup "Network Configuration Operators" /add "AzureAD\vardaspavarde@zki.lt"
 
