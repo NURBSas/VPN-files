@@ -124,7 +124,15 @@ Susirandam vietą su  _stream{_ ir įrašom sekančias eilutes:
 Tuomet paleidžiame komandą kuri paleidžia atgalinį proxy per 80 portą:
      
      sudo nginx -t
-     
+
+PAtikrinam ar WG serveris veikia tvarkingai ir kas vyksta.
+Tam yra komanda
+
+     wg
+
+     _arba_ wg show
+
+
 Tesiame galimai iškilsiančių problemų sprendimus.
 Windows klientas kuris neturi admin teisių gali susidurti su instaliacijos ir paleidimo problemomis.
 Sprandžiasi jos taip. Vartotojo aplinkoje atidarome **CMD** administratoriaus vardu:
