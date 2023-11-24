@@ -35,6 +35,7 @@ Toliau tikrinam FireWall'ą
  Turim gauti atsakymą:
 
 _51866/udp ALLOW Anywhere_
+
 _OpenSSH ALLOW Anywhere_
 
 Toliau paleidžiam patį WG servisą:
