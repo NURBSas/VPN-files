@@ -37,6 +37,15 @@ Toliau tikrinam FireWall'ą
 _51866/udp ALLOW Anywhere_
 _OpenSSH ALLOW Anywhere_
 
+Toliau paleidžiam patį WG servisą:
+
+     sudo systemctl enable wg-quick@wg0.service
+     sudo systemctl start wg-quick@wg0.service
+     (Jai norime tik perkrauti tai _sudo systemctl restart wg-quick@wg0.service_)
+
+Žiūrime į WG serviso būseną:
+
+     sudo systemctl status wg-quick@wg0.service     
      
 ### Pagrindinės komandos konfiguruojant Wireguard serverį:
 
@@ -53,7 +62,7 @@ Komanda redaguojanti pagrindinį konfiguracinį failą (wg0 virtualaus interfeis
      sudo nano /etc/wireguard/wg0.conf
 
 Failo viduje turėtu būti tokia konfiguracija: 
-(pirma serverio duomenys poto klientų)
+_(pirma serverio duomenys poto klientų)_
 
      Address = 16.0.0.1/24
      SaveConfig = true
@@ -80,5 +89,11 @@ Kliento pusėje turėtų būti.
      Endpoint = XX.XX.XX.XX:51266 #(Jūsų išorinis IP adresas)
      PersistentKeepalive = 20
 
-Testuojam:
+### Papildomai dar galima sukonfiguruoti NGINX serverį:
+
+Atnaujinam ubuntu ir instaliuojame **Nginx** serverį
+
+     sudo apt update -y && sudo apt install -y nginx
+     
+
 
