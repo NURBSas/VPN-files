@@ -89,7 +89,8 @@ Kliento pusėje turėtų būti.
      Endpoint = XX.XX.XX.XX:51266 #(Jūsų išorinis IP adresas)
      PersistentKeepalive = 20
 
-Norint pridėti ar pakeisti kažką **wg0.conf** faile ir kad tai suveiktu reikia perkrauti patį servisą
+Norint pridėti ar pakeisti kažką **wg0.conf** faile ir kad tai suveiktu reikia perkrauti patį servisą.
+
 Serviso sustabdymo komanda:
 
      wg-quick down wg0
