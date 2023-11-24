@@ -7,7 +7,16 @@ Pradžioje užsiinstaliuojam ubuntu server:
 
      sudo apt update
      sudo apt install wireguard -y
+     
+Konfiguruojam serverį:
 
+     sudo nano /etc/sysctl.conf
+
+Atidarius failą patikrinam ar atidaryta eilutė:
+
+     net.ipv4.ip_forward=1
+     net.ipv6.conf.all.forwarding=1 # (Jai norime naudoti IPv6 standartą)
+     
 Pagrindinės komandos konfiguruojant Wireguard serverį:
 
 Komanda generuojanti WG privatų raktą:
@@ -25,9 +34,9 @@ Komanda redaguojanti pagrindinį konfiguracinį failą (wg0 virtualaus interfeis
 Failo viduje turėtu būti tokia konfiguracija: 
 (pirma serverio duomenys poto klientų)
 
-     Address = 16.0.0.1/24                                                                                                                        
-     SaveConfig = true                                                                                                                            
-     ListenPort = 51266 #(Priklausomai koks atviras portas yra pas jus tokį ir įrašykite)                                                                                                                           
+     Address = 16.0.0.1/24
+     SaveConfig = true
+     ListenPort = 51266 #(Priklausomai koks atviras portas yra pas jus tokį ir įrašykite)
      PrivateKey = xxxxxxxxxxxxxxx #(privatus serverio raktas)
      PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o ens3 -j MASQUERADE
      PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o ens3 -j MASQUERADE
