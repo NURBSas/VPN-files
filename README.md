@@ -146,6 +146,7 @@ Norint užsinstaliuoti wireguard klientą.
 Reikia vartotoja pridėti prie _Administrators_ grupės:
 
      net localgroup administrators AzureAD\vardaspavarde /add
+     # net localgroup administrators /add "AzureAD\UserUpn"
      
      net localgroup "Network Configuration Operators" /add "AzureAD\vardaspavarde@contoso.lt"
 
