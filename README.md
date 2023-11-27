@@ -147,7 +147,7 @@ Reikia vartotoja pridėti prie _Administrators_ grupės:
 
      net localgroup administrators AzureAD\vardaspavarde /add
      
-     # vartotojo vardas toks kaip c:/Users/xxxx -->  net localgroup administrators /add "AzureAD\UserUpn"
+Vartotojo vardas gali būti ir toks kaip c:/Users/xxxx -->  net localgroup administrators /add "AzureAD\UserUpn"
      
      net localgroup "Network Configuration Operators" /add "AzureAD\vardaspavarde@contoso.lt"
 
