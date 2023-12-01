@@ -1,7 +1,7 @@
 # VPN-files
 Viskas apie VPN servisą
 
-![WG](https://cloud.z.com/vn/wp-content/uploads/2023/03/wireguard-ar21.png)
+![WG](https://images.sftcdn.net/images/t_app-icon-s/p/202bac9d-51e4-47a6-8a02-0f02f344c184/2940667803/wireguard-144361_O.png)
 
 ## Wireguard instaliacija (ubuntu server ir windows client)
 
