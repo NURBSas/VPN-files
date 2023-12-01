@@ -1,6 +1,8 @@
 # VPN-files
 Viskas apie VPN servisą
 
+![WG](https://cloud.z.com/vn/wp-content/uploads/2023/03/wireguard-ar21.png)
+
 ## Wireguard instaliacija (ubuntu server ir windows client)
 
 Pradžioje užsiinstaliuojam ubuntu server:
