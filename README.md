@@ -143,7 +143,9 @@ Registrai kuriuos reikia sukurti:
      reg add HKLM\Software\WireGuard /v DangerousScriptExecution /t REG_DWORD /d 1 /f
 
 Norint užsinstaliuoti wireguard klientą.
+
 Pasitikrinam kliento vardą powershell'e komanda: **whoami**
+
 Reikia vartotoja pridėti prie _Administrators_ grupės:
 
      net localgroup administrators AzureAD\vardaspavarde /add
