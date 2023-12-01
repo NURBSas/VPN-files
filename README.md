@@ -144,7 +144,7 @@ Registrai kuriuos reikia sukurti:
 
 Norint užsinstaliuoti wireguard klientą.
 
-Pasitikrinam kliento vardą powershell'e komanda: **whoami**
+Pasitikrinam kliento vardą **powershell'e** komanda: **whoami**
 
 Reikia vartotoja pridėti prie _Administrators_ grupės:
 
@@ -153,6 +153,10 @@ Reikia vartotoja pridėti prie _Administrators_ grupės:
 Vartotojo vardas gali būti ir toks kaip c:/Users/xxxx -->  net localgroup administrators /add "AzureAD\UserUpn"
      
      net localgroup "Network Configuration Operators" /add "AzureAD\vardaspavarde@contoso.lt"
+
+Pasitikrinam ar mūsų vartotojas atsirado ten kur reikia **CMD** komanda **compmgmt.msc**
+
+Aarba naudojant **Win + X** ir pasirenkant **"Computer Managment"**
 
 užinstaliuojam wireguard'ą ir tada
 
