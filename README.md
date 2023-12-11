@@ -134,6 +134,9 @@ Tam yra komanda
 
 arba _wg show_
 
+
+### Windows kliento instaliacija (wireguard windows client)
+
 Tesiame galimai iškilsiančių problemų sprendimus.
 Windows klientas kuris neturi admin teisių gali susidurti su instaliacijos ir paleidimo problemomis.
 Sprandžiasi jos taip. Vartotojo aplinkoje atidarome **CMD** administratoriaus vardu:
