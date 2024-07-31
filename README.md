@@ -111,6 +111,9 @@ Pakoregavus **wg0.conf** failą reikia vėl paleisti servisą komanda:
 
 Po perkrovimo esamas **wg0.conf** pasikeičia tai yra perrašomas.
 
+Norint pridėti papildomą vartotoją reikia iš pirmo sustabdyti servisą _wg-quick down wg0_ tada perrašyti _wg0.conf_ failą (pridėti vartotojo duomenis) 
+ir tik po to startuoti servisą vėl komanda _wg-quick up wg0_
+
 ### Papildomai dar galima sukonfiguruoti NGINX serverį:
 
 Atnaujinam ubuntu ir instaliuojame **Nginx** serverį ir jį paleidžiame:
