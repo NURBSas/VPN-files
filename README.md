@@ -111,6 +111,8 @@ Pakoregavus **wg0.conf** failą reikia vėl paleisti servisą komanda:
 
 Po perkrovimo esamas **wg0.conf** pasikeičia tai yra perrašomas.
 
+####SVARBU!
+
 Norint pridėti papildomą vartotoją reikia iš pirmo sustabdyti servisą **wg-quick down wg0** tada perrašyti **wg0.conf** failą _(pridėti vartotojo duomenis)_ 
 ir tik po to startuoti servisą vėl komanda **wg-quick up wg0**
 
