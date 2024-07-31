@@ -166,7 +166,7 @@ Reikia vartotoja pridėti prie _Administrators_ grupės:
      
 Vartotojo vardas gali būti ir toks kaip c:/Users/xxxx -->  net localgroup administrators /add "AzureAD\UserUpn"
      
-     net localgroup "Network Configuration Operators" /add "AzureAD\vardaspavarde@contoso.lt"
+     net localgroup "Network Configuration Operators" /add "AzureAD\vardas.pavarde@contoso.lt"
 
 Pasitikrinam ar mūsų vartotojas atsirado ten kur reikia **CMD** komanda **compmgmt.msc**
 
