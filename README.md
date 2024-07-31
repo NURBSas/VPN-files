@@ -63,6 +63,10 @@ Komanda generuojanti viešajį raktą:
 
      echo XXprivatus-raktasXX | wg pubkey 
 
+Komanda generuojanti patvirtinantijį _PresharedKey_
+
+     wg genpsk
+
 Komanda redaguojanti pagrindinį konfiguracinį failą (wg0 virtualaus interfeiso, pavadinimas gali būti ir kitoks):
 
      sudo nano /etc/wireguard/wg0.conf
